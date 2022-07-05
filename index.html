@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <title></title>
+</head>
+<body>
+    <div class="wrapper container">
+        <h1 class="ordering__title">Оформление заказа</h1>
+        <main class="main">
+            <section class="content">
+                <div class="content__container">
+                    <div class="delivery">
+                        <div class="delivery__main">
+                            <h2 class="delivery__title main__title">Доставка</h2>
+                            <div class="delivery__arrows">
+                                <button class="delivery__arrow left disable">
+                                    <img src="./image/arrow.svg" alt="">
+                                </button>
+                                <button class="delivery__arrow right">
+                                    <img src="./image/arrow.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="delivery__cards">
+                            <div class="delivery__card active">
+                                <div class="delivery__card-text">
+                                    <span class="delivery__card-title card__title">Почта России, курьер — 24-26 сент <br></span>
+                                    <span class="delivery__card-number mobile">+367 ₽ <br></span>
+                                    <span class="delivery__card-subtitle card__subtitle">ул. Академика Королева, 73/3, Петропавловск- Камчатский, 683000</span>
+                                </div>
+                                <span class="delivery__card-number desktop">+367 ₽</span>
+                            </div>
+                            <div class="delivery__card">
+                                <div class="delivery__card-text">
+                                    <span class="delivery__card-title card__title">Лабиринт, курьер — 25 сент. <br></span>
+                                    <span class="delivery__card-number mobile">0 ₽</span>
+                                    <span class="delivery__card-subtitle card__subtitle">Можайское шоссе, д. 21, кв. 50, Москва, 121471</span>
+                                </div>
+                                <span class="delivery__card-number desktop">0 ₽</span>
+                            </div>
+                        </div>
+                        <button class="delivery__btn blue__btn">Выбрать новое место и способ</button>
+                    </div>  
+                    <div class="date">
+                        <div class="date__cards">
+                            <div class="date__card active">
+                                <div class="date__card-body">
+                                    <span class="date__card-title card__title desktop">пн, 24 сен — ср, 26 сен<br></span>
+                                    <span class="date__card-title card__title mobile">пн, 24 сен<br></span>
+                                    <span class="date__card-subtitle card__subtitle">10:00–19:00</span>
+                                </div>
+                            </div>
+                            <div class="date__card">
+                                <div class="date__card-body">
+                                    <span class="date__card-title card__title desktop">чт, 27 сен — пт, 28 сен<br></span>
+                                    <span class="date__card-title card__title mobile">чт, 27 сен<br></span>
+                                    <span class="date__card-subtitle card__subtitle">10:00–19:00</span>
+                                </div>
+                            </div>
+                            <button class="date__btn blue__btn">Другие дата и время</button>
+                        </div>
+                        <div class="date__checkboxes">
+                            <div class="date__checkbox">
+                                <input type="checkbox" name="notification" id="notification" value="" class="date__checkbox-input">
+                                <label for="notification">Viber/СМС уведомления о статусе заказа</label>
+                            </div>
+                            <div class="date__checkbox disabled">
+                                <input type="checkbox" name="put" id="put" value="" class="date__checkbox-input" disabled>
+                                <label for="put">Оставить у двери (бесконтактная доставка)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="receiver">
+                        <div class="receiver__main">
+                            <h2 class="receiver__title main__title">Получатель</h2>
+                            <button class="select__btn-title blue__btn">Новый получатель</button>
+                        </div>
+                        <div class="receiver__selects">
+                            <div class="receiver__select user">
+                                <div class="select__body">
+                                    <span class="select__placeholder">Имя и фамилия</span>
+                                    <div class="select__preview">
+                                        <select name="name" id="" class="select__name">
+                                            <option value="">Вольфганг Вениаминович Константинопольский</option>
+                                            <option value="">Константин Вениаминович Константинопольский</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button class="select__btn newuser blue__btn">Новый получатель</button>
+                            </div>
+                            <div class="receiver__select phone">
+                                <div class="select__body">
+                                    <span class="select__placeholder">Контактный телефон</span>
+                                    <div class="select__preview">
+                                        <select name="name" id="" class="select__phone">
+                                            <option value="">+7 910 234-56-78</option>
+                                            <option value="">+7 901 234-56-78</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button class="select__btn blue__btn">Новый телефон</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <aside class="schedule">
+                <div class="schedule__body">
+                    <h2 class="schedule__title">В заказе 4 товара <span>(2 кг)</span></h2>
+                    <div class="schedule__cards">
+                        <div class="schedule__card">
+                            <span class="schedule__card-text">Цена товаров</span>
+                            <span class="schedule__card-number">29 456 ₽</span>
+                        </div>
+                        <div class="schedule__card">
+                            <span class="schedule__card-text">Все скидки</span>
+                            <span class="schedule__card-number">-7 732 ₽</span>
+                        </div>
+                        <div class="schedule__card">
+                            <span class="schedule__card-text">Скидка за предоплату</span>
+                            <span class="schedule__card-number">-3%</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <div class="popup">
+        <div class="popup__body">
+            <h2 class="popup__title">В заказе 4 товара <span>(2 кг)</span></h2>
+            <div class="popup__cards">
+                <div class="popup__card">
+                    <span class="popup__card-text">Цена товаров</span>
+                    <span class="popup__card-number">29 456 ₽</span>
+                </div>
+                <div class="popup__card">
+                    <span class="popup__card-text">Все скидки</span>
+                    <span class="popup__card-number">-7 732 ₽</span>
+                </div>
+            </div>
+            <div class="popup__card border">
+                <span class="popup__card-text">К оплате:</span>
+                <span class="popup__card-number">21 072 ₽</span>
+            </div>
+        </div>
+        <div class="popup__btn">
+            <button id="popup__btn">Закрыть подробности</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__desktop">
+            <button class="footer__desktop-btn">Оформить и оплатить</button>
+            
+            <div class="footer__desktop-price">
+                <span class="footer__desktop-text">Итого к оплате на сайте:</span>
+                <span class="footer__desktop-number">21 072 ₽</span>
+            </div>
+        </div>
+        <div class="footer__mobile">
+            <div class="footer__mobile-price">
+                <span class="footer__mobile-text">К оплате: 21 072 ₽</span>
+                <button class="footer__mobile-popup">Подробнее</button>
+            </div>
+            <button class="footer__mobile-btn">Оформить и оплатить</button>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
